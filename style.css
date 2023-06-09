@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+}
+
+.body {
+    width: 100%;
+    height: 1000px;
+    background-color: rgb(46, 118, 109);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .signin-container  {
+    width: 400px;
+    padding: 30px;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #95c8b5;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px 10px  rgba(7, 9, 31, 0.4);
+  }
+
+  .signin-container .signin_title {
+    display: inline-block;
+    text-align: left;
+    color: #333;
+  }
+
+  .signin-container form {
+    margin-top: 30px;
+  }
+
+  .signin-container input[type="email"],
+  .signin-container input[type="password"]{
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 14px;
+  }
+
+  .signin-container input[type="submit"]{
+    width: 85.5%;
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 14px;
+  }
+
+  #checkbox{
+    margin-left: 30px;
+  }
+  .label a{
+    text-decoration: none;
+    margin-left: 30px;
+  }
+  .label a:hover{
+    text-decoration: underline;
+  }
+
+  .signin-container p {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .signin-container p a {
+    color: #333;
+    text-decoration: none;
+  }
+
+  .signin-container p a:hover {
+    text-decoration: underline;
+  }
+
+/*button color and hover*/
+  #google{
+    background-color: rgb(185, 52, 25);
+    color: white;
+  }
+  #google:hover {
+    background-color: rgb(143, 32, 12);
+    transition: 0.5s;
+  }
+  #facebook {
+    background-color: rgb(5, 68, 103);
+    color: white;
+  }
+  #facebook:hover {
+    background-color: rgb(4, 50, 72);
+    transition: 0.5s;
+  }
+
+  #signin{
+    background-color: rgb(7, 37, 53);
+    color: white;
+  }
+  #signin:hover  {
+    background-color: rgb(9, 67, 94);
+    transition: 0.5s;
+  }
+
+  /* animation for signin title */
+
+  @keyframes signin {
+    0%{
+        width: 0ch;
+    }
+    50%{
+        width: 4ch;
+    }
+    
+}
+.signin_title{
+    width: 0ch;
+    animation: signin 5s infinite;
+    border-bottom: 4px solid rgb(6, 81, 161);
+    white-space: nowrap;
+    display: inline-block;
+    overflow:visible;
+
+}
+/***********sing in section end*************/
